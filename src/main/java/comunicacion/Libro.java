@@ -2,7 +2,6 @@ package comunicacion;
 
 public class Libro extends Escrito{
   
-	private int paginas;  
   private String co_autor;
   private String editorial;
   private String edicion;
@@ -17,7 +16,7 @@ public class Libro extends Escrito{
   }
 
   public int palabrasTotales(int x){
-    return this.paginas * x * 2;
+    return this.getPaginas() * x * 2;
   }
 
   public String interpretacion(){

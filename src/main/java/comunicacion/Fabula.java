@@ -2,7 +2,6 @@ package comunicacion;
 
 public class Fabula extends Escrito{
   
-	private int paginas;
   private String ensenanzas;
   private String interpretacion;
 
@@ -13,7 +12,7 @@ public class Fabula extends Escrito{
   }
 
   public int palabrasTotales(int x ){
-    return this.paginas * x;
+    return this.getPaginas() * x;
   }
 
   public String interpretacion(){

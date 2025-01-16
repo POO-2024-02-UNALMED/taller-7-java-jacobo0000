@@ -2,7 +2,6 @@ package comunicacion;
 
 public class Periodico extends Escrito{
   
-	private int paginas;
   private String fecha;
   private String primicia;
   private String interpretacion;
@@ -16,7 +15,7 @@ public class Periodico extends Escrito{
   }
 
   public int palabrasTotales(int x ){
-    return this.paginas * x * 10;
+    return this.getPaginas() * x * 10;
   }
 
   public String interpretacion(){
