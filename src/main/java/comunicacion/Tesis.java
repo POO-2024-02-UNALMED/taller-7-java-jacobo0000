@@ -33,7 +33,7 @@ public class Tesis extends Escrito{
     this.idea + "\n" +
     this.argumentos.length + "\n" +
     this.conclusion + "\n" +
-    this.referencias + "\n";
+    this.referencias;
   }
 
   public String getInterpretacion(){
