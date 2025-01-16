@@ -22,7 +22,7 @@ public class Alfabeto extends Pictograma{
   public String toString(){
     String cadenaDeRetorno = "";
     for (String i : letras){
-      if (letras[-1] == i){
+      if (letras[letras.length - 1] == i){
         cadenaDeRetorno += i;
         return cadenaDeRetorno;
       }
