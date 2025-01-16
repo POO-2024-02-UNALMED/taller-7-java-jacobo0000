@@ -4,6 +4,10 @@ public abstract class Pictograma {
 	
 	private String origen;
 	
+	public Pictograma(){
+
+	}
+	
 	public Pictograma(String origen) {
 		super();
 		this.origen = origen;
