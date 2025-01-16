@@ -1,9 +1,7 @@
 package comunicacion;
 
 public class Libro extends Escrito{
-  private String origen;
-  private String titulo;
-	private String autor;
+  
 	private int paginas;  
   private String co_autor;
   private String editorial;
@@ -27,10 +25,10 @@ public class Libro extends Escrito{
   }
 
   public String toString(){
-    String retorno = this.origen + "\n" +
-    this.titulo + "\n" + 
-    this.autor + "\n" +
-    this.paginas + "\n" +
+    String retorno = this.getOrigen() + "\n" +
+    this.getTitulo() + "\n" + 
+    this.getAutor() + "\n" +
+    this.getPaginas() + "\n" +
     this.co_autor + "\n" +
     this.editorial + "\n" +
     this.edicion + "\n";

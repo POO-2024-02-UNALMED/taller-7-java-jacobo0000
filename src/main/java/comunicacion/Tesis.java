@@ -2,10 +2,6 @@ package comunicacion;
 
 public class Tesis extends Escrito{
   
-  private String origen;
-  private String titulo;
-	private String autor;
-	private int paginas;
   private String idea;
   private String[] argumentos;
   private String conclusion;
@@ -22,7 +18,7 @@ public class Tesis extends Escrito{
   }
 
   public int palabrasTotales(int x ){
-    return this.paginas * x * 5;
+    return this.getPaginas() * 5 * x;
   } 
 
   public String interpretacion(){
@@ -30,16 +26,14 @@ public class Tesis extends Escrito{
   }
 
   public String toString(){
-    String retorno = this.origen + "\n" +
-    this.titulo + "\n" + 
-    this.autor + "\n" +
-    this.paginas + "\n" +
+    return this.getOrigen() + "\n" +
+    this.getTitulo() + "\n" + 
+    this.getAutor() + "\n" +
+    this.getPaginas() + "\n" +
     this.idea + "\n" +
-    this.argumentos + "\n" +
+    this.argumentos.length + "\n" +
     this.conclusion + "\n" +
     this.referencias + "\n";
-
-    return retorno;
   }
 
   public String getInterpretacion(){

@@ -7,9 +7,8 @@ public abstract class Pictograma {
 	public Pictograma(){
 
 	}
-	
+
 	public Pictograma(String origen) {
-		super();
 		this.origen = origen;
 	}
 
